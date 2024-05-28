@@ -40,7 +40,6 @@
     <!--/header-->
     <!--main-->
     <main class="d-flex justify-content-center container flex-wrap">
-
         <!--column 1-->
           <div class="w-75 p-3">
             <h1>Richiesta Preventivo</h1>
@@ -61,10 +60,10 @@
                 <div class="col-6 col-md-12">
                     <label for="inputState" class="form-label">Tipo di Lavoro</label>
                     <select id="inputState" class="form-select">
-                      <option selected>Seleziona un lavoro</option>
-                      <option>Backed Development</option>
-                      <option>Frontend Development</option>
-                      <option>Project Analysis</option>
+                      <option value="0" selected>Seleziona un lavoro</option>
+                      <option value="1">Backed Development</option>
+                      <option value="2">Frontend Development</option>
+                      <option value="3">Project Analysis</option>
                     </select>
                 </div>
                 <div class="mb-3 col-6 col-md-12">
@@ -81,9 +80,9 @@
                 </div>
                 <div class="d-flex justify-content-evenly">
                   <div class="col-6 col-md-12 d-flex">
-                    <button type="submit" class="btn btn-primary">Sign in</button>                   
+                    <button id="submit" type="button" class="btn btn-primary">Calcola preventivo</button>                   
                 </div>
-                  <p id="total">€</p>
+                  <p id="total"></p><p>€</p>
                 </div>
 
               </form>
