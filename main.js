@@ -14,9 +14,11 @@ const FrontendWork = 15.30;
 const AnalystWork = 33.60;
 let priceHour ;
 
-
+// array codici sconto
 const discountCode = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
+//percentuale sconto
 const discount = 25;
+
 
 //verifico ogni volta che vario il campo selezionato
 inputWork.addEventListener("click",function(){
@@ -34,18 +36,28 @@ inputWork.addEventListener("click",function(){
     }
 });
 
-function controlli(){
-    let inputDiscountCode=document.forms[0].inputCode.value;
-    console.log(inputDiscountCode);
-  }
-
 
 
 
 //calcola il prezzo del preventivo
 calcola.addEventListener("click",function(){
-
-
+    let inputDiscountCode = document.getElementById("inputCode").value;
+    console.log(inputDiscountCode.toUpperCase());
+    //if(discountCode.includes === inputDiscountCode.toUpperCase()){
+    //    console.log("yes");
+    //}else{
+    //    console.log("no");
+    //   }
+    for(let i = 0; i <= discountCode.length; i++){
+        let actValue = discountCode[i];
+        console.log(actValue);
+        if (actValue === inputDiscountCode.toUpperCase()){
+            console.log("yes");
+            break
+        }else{
+            console.log("no");
+        }
+    }
 
 
 
