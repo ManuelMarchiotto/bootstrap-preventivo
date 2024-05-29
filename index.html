@@ -17,23 +17,19 @@
     <!--header-->
     <header>
         <!--navbar-->
-          <nav class="navbar px-3 mb-3 bg-black container " >
+          <nav class="navbar navbar-expand-lg px-3 mb-3 bg-black container " >
             <a class="navbar-brand text-light" href="#">Bool Factory</a>
-            <div class="">
-              <ul class="nav navbar-right">
-                <li class="nav-item">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <div class="navbar-nav">
                   <a class="nav-link text-light" href="#">Home</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link text-light" href="#">Servizi</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link text-light" href="#">Contatti</a>
-                </li>
-              </ul>
+              </div>    
             </div>
           </nav> 
-
         <!--/navbar-->
     </header>
     <!--/header-->
@@ -52,19 +48,19 @@
                 <!-- /intestazione colonna 1-->
                 <!-- tabella-->
                 <form class="">
-                  <div class="col-s-6 col-md-12">
+                  <div class="col-s-6 col-md-12 mb-3">
                     <label for="inputName" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="inputName">
                   </div>
-                  <div class="col-s-6 col-md-12">
+                  <div class="col-s-6 col-md-12 mb-3">
                     <label for="inputSurname" class="form-label">Cognome</label>
                     <input type="text" class="form-control" id="inputSurname">
                   </div>
-                  <div class="col-s-6 col-md-12">
+                  <div class="col-s-6 col-md-12 mb-3">
                     <label for="inputAddress" class="form-label">E-mail</label>
                     <input type="text" class="form-control" id="inputAddress">
                   </div>
-                  <div class="col-s-6 col-md-12">
+                  <div class="col-s-6 col-md-12 mb-3">
                       <label for="inputState" class="form-label">Tipo di Lavoro</label>
                       <select id="inputState" class="form-select">
                         <option value="0" selected>Seleziona un lavoro</option>
@@ -73,19 +69,19 @@
                         <option value="3">Project Analysis</option>
                       </select>
                   </div>
-                  <div class="mb-3 col-s-6 col-md-12">
+                  <div class="mb-3 col-s-6 col-md-12 mb-3">
                       <label for="exampleFormControlTextarea1" class="form-label">Textarea con Bootstrap</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
-                  <div class="col-s-6 col-md-12">
+                  <div class="col-s-6 col-md-12 mb-3">
                       <label for="inputCode" class="form-label">Codice Promozionale (opzionale)</label>
                       <input type="text" class="form-control" id="inputCode">
                   </div>
-                  <div class="form-check">
+                  <div class="form-check mb-4">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                       <label class="form-check-label" for="flexCheckDefault">Accetto la Privacy Policy</label>
                   </div>
-                  <div class="d-flex justify-content-evenly">
+                  <div class="d-flex justify-content-evenly m-4">
                     <div class="col-s-6 col-md-12 d-flex">
                       <button id="submit" type="button" class="btn btn-primary">Calcola preventivo</button>                   
                   </div>
