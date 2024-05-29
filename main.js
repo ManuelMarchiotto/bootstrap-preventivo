@@ -3,17 +3,20 @@
 
 //leggo dove si trova il puntatore per il valore 
 let inputWork = document.getElementById("inputState");
-let calcola = document.getElementById("submit");
+const calcola = document.getElementById("submit");
 
 
 //console.log(inputWork);
 
 //definizioni variabili dei soldi
-let BackedDevelopmentWork = 20.50;
-let FrontendWork = 15.30;
-let AnalystWork = 33.60;
+const BackedDevelopmentWork = 20.50;
+const FrontendWork = 15.30;
+const AnalystWork = 33.60;
 let priceHour ;
 
+
+const discountCode = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
+const discount = 25;
 
 //verifico ogni volta che vario il campo selezionato
 inputWork.addEventListener("click",function(){
@@ -31,10 +34,21 @@ inputWork.addEventListener("click",function(){
     }
 });
 
+function controlli(){
+    let inputDiscountCode=document.forms[0].inputCode.value;
+    console.log(inputDiscountCode);
+  }
+
+
+
 
 //calcola il prezzo del preventivo
 calcola.addEventListener("click",function(){
-    //console.log(priceHour * 10);
+
+
+
+
+
     document.getElementById("total").innerHTML = priceHour * 10; 
 });
 
