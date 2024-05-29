@@ -37,69 +37,86 @@
         <!--/navbar-->
     </header>
     <!--/header-->
-    <!--main-->
-    <main class="d-flex justify-content-center container flex-wrap">
-        <!--column 1-->
-          <div class="w-75 p-3">
-            <h1>Richiesta Preventivo</h1>
-            <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
-            <form class="row g-3">
-                <div class="col-6 col-md-12">
-                  <label for="inputName" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="inputName">
+    <!-- corpo della pagina-->
+        <main>
+          <div class="container">
+            <div class="row ">
+              <div class="col-12 col-lg-8 col-xl-9">
+                <!-- intestazione colonna 1-->
+                <div class="row align-items-center mb-3">
+                  <div class="col-6 col-lg-12">
+                    <h1>Richiesta Preventivo</h1>
+                    <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
+                  </div>
                 </div>
-                <div class="col-6 col-md-12">
-                  <label for="inputSurname" class="form-label">Cognome</label>
-                  <input type="text" class="form-control" id="inputSurname">
+                <!-- /intestazione colonna 1-->
+                <!-- tabella-->
+                <form class="">
+                  <div class="col-s-6 col-md-12">
+                    <label for="inputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputName">
+                  </div>
+                  <div class="col-s-6 col-md-12">
+                    <label for="inputSurname" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="inputSurname">
+                  </div>
+                  <div class="col-s-6 col-md-12">
+                    <label for="inputAddress" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                  </div>
+                  <div class="col-s-6 col-md-12">
+                      <label for="inputState" class="form-label">Tipo di Lavoro</label>
+                      <select id="inputState" class="form-select">
+                        <option value="0" selected>Seleziona un lavoro</option>
+                        <option value="1">Backed Development</option>
+                        <option value="2">Frontend Development</option>
+                        <option value="3">Project Analysis</option>
+                      </select>
+                  </div>
+                  <div class="mb-3 col-s-6 col-md-12">
+                      <label for="exampleFormControlTextarea1" class="form-label">Textarea con Bootstrap</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="col-s-6 col-md-12">
+                      <label for="inputCode" class="form-label">Codice Promozionale (opzionale)</label>
+                      <input type="text" class="form-control" id="inputCode">
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">Accetto la Privacy Policy</label>
+                  </div>
+                  <div class="d-flex justify-content-evenly">
+                    <div class="col-s-6 col-md-12 d-flex">
+                      <button id="submit" type="button" class="btn btn-primary">Calcola preventivo</button>                   
+                  </div>
+                    <p id="total"></p><p>€</p>
+                  </div>
+  
+                </form>
+                <!-- /tabella -->
+              </div>
+              <!-- col dx-->
+              <div class="col-12 col-lg-4 col-xl-3">
+                <!-- card 2-->
+                <div class="">
+                  <ul class="list-group">
+                   <li class="list-group-item "><img class="img-fluid" src="img/dummy_300x200_ffffff_cccccc.png" alt="placholder" srcset=""></li>
+                    <li class="list-group-item"><h3>I nostri contatti</h3><p>Se hai bisogno di aiuto puoi contattarci:</p></li>
+                    <li class="list-group-item">help@boolfactory.test</li>
+                    <li class="list-group-item">+1122334455</li>
+                    <li class="list-group-item text-decoration-underline"><a href="#" class="text-decoration-none">Help desk</a></li>
+                  </ul>
                 </div>
-                <div class="col-6 col-md-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress">
+                    <!-- /accordion-->
+                  </div>
                 </div>
-                <div class="col-6 col-md-12">
-                    <label for="inputState" class="form-label">Tipo di Lavoro</label>
-                    <select id="inputState" class="form-select">
-                      <option value="0" selected>Seleziona un lavoro</option>
-                      <option value="1">Backed Development</option>
-                      <option value="2">Frontend Development</option>
-                      <option value="3">Project Analysis</option>
-                    </select>
-                </div>
-                <div class="mb-3 col-6 col-md-12">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="col-6 col-md-12">
-                    <label for="inputCode" class="form-label">Codice Promozionale (opzionale)</label>
-                    <input type="text" class="form-control" id="inputCode">
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">Accetto la Privacy Policy</label>
-                </div>
-                <div class="d-flex justify-content-evenly">
-                  <div class="col-6 col-md-12 d-flex">
-                    <button id="submit" type="button" class="btn btn-primary">Calcola preventivo</button>                   
-                </div>
-                  <p id="total"></p><p>€</p>
-                </div>
-
-              </form>
+                <!-- /card 2-->
+              </div>
+              <!-- /col dx -->
+            </div>
           </div>
-          <!--/column 1-->
-          <!--column 2-->
-          <div class="w-25 p-3">
-            <ul class="list-group">
-             <li class="list-group-item "><img class="img-fluid" src="img/dummy_300x200_ffffff_cccccc.png" alt="placholder" srcset=""></li>
-              <li class="list-group-item"><h3>I nostri contatti</h3><p>Se hai bisogno di aiuto puoi contattarci:</p></li>
-              <li class="list-group-item">help@boolfactory.test</li>
-              <li class="list-group-item">+1122334455</li>
-              <li class="list-group-item text-decoration-underline"><a href="#" class="text-decoration-none">Help desk</a></li>
-            </ul>
-        </div>
-        <!--/column 2-->
-    </main>
-    <!--/main-->
+        </main>
+    <!-- /corpo della pagina-->    
     <!--footer-->
     <footer class="bg-black text-white text-center p-4 mt-4 container">
       © 2024 - Tutti i diritti riservati
