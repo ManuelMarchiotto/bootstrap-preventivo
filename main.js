@@ -63,9 +63,21 @@ calcola.addEventListener("click",function(){
         
     }
     let totalPrice = (priceHour * 10)-(((priceHour * 10)*discount)/100);
-    console.log(discount);
-    console.log(priceHour);
-    document.getElementById("total").innerHTML = totalPrice;
-    ; 
+    let resto = (100-((priceHour * 10)*discount)%100);
+    //console.log(discount);
+    //console.log(priceHour);
+    console.log(totalPrice);
+    console.log(resto);
+    //console.log(((priceHour * 10)*discount)/100);
+    //console.log(((priceHour * 10)*discount)%100);
+    //console.log(100-((priceHour * 10)*discount)%100);
+    document.getElementById("total").innerHTML = Math.trunc(totalPrice);
+
+    if(resto != 100){
+        document.getElementById("resto").innerHTML = `.${resto}`;
+    }else{
+        document.getElementById("resto").innerHTML = ".0";
+    }
+    
 });
 

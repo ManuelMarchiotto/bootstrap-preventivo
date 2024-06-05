@@ -17,21 +17,23 @@
     <!--header-->
     <header>
         <!--navbar-->
-          <nav class="navbar navbar-dark bg-dark navbar-expand-lg px-3 mb-3 container">
-            <a class="navbar-brand text-light" href="#">Bool Factory</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="navbar-nav">
-                  <a class="nav-link text-light" href="#">Home</a>
-                  <a class="nav-link text-light" href="#">Servizi</a>
-                  <a class="nav-link text-light" href="#">Contatti</a>
-              </div>    
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark container px-3 mb-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Bool Factor</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <form class="d-flex" role="search">
+                  <a class="nav-link text-light m-2" href="#">Home</a>
+                  <a class="nav-link text-light  m-2" href="#">Servizi</a>
+                  <a class="nav-link text-light  m-2" href="#">Contatti</a>
+                </form>
+              </div>
             </div>
-            
-          </nav> 
-            
+          </nav>   
         <!--/navbar-->
     </header>
     <!--/header-->
@@ -88,21 +90,21 @@
                       <div class="col-sm-6 text-center">
                         <button id="submit" type="button" class="btn btn-primary">Calcola preventivo</button> 
                       </div>
-                      <div class="col-sm-6">
-                          <label  class="form-label">Prezzo finale</label>
-                          <div class="d-flex">
-                            <p class="m-auto">€</p>
-                            <p id="total"></p>
-                            <p id="resto"></p>
-                          </div>    
-                      </div>
+                      <div class="col-sm-6 ">
+                          <label  class="form-label fs-4 fw-bolder mb-1">Prezzo finale</label>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text bg-transparent border border-0 fs-4 fw-bolder ">€</span>
+                              <span class="input-group-text bg-transparent border border-0 pe-0  fs-4 fw-bolder " id="total">00</span>
+                              <span class="input-group-text bg-transparent border border-0 ps-0  fs-4 text-body-tertiary" id="resto">.00</span>
+                            </div>                                                      
+                      </div>                     
                     </div>
                   </div> 
                 </form>
                 <!-- /corpo colonna 1 -->
               </div>
                 <!-- colonna 2-->
-                <div class="col-12 col-lg-4 col-xl-3">
+                <div class="col-s-6 col-lg-4 col-xl-3">
                   <div class="card" style="width: 18rem;">
                     <img src="img/300x200.png" class="card-img-top" alt="...">
                       <div class="card-body">
